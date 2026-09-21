@@ -1,6 +1,6 @@
 # Confiabilidade e desempenho dos indicadores de resposta do SAMU 192 em Minas Gerais
 
-Projeto prático individual da disciplina de ciência de dados — Paolla [SOBRENOME] — [MATRÍCULA]
+Projeto prático individual da disciplina de ciência de dados — Paola Alves Ferreira — 2022062838 - alvespaolla@ufmg.br 
 
 ## Resumo
 
