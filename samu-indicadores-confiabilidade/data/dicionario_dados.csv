@@ -1,0 +1,32 @@
+﻿campo,descricao
+id_chamada_pseudo,Chave da chamada (IdSamu + ano + NumOcorrencia) embaralhada com segredo; irreversível sem o segredo
+id_atend_pseudo,Chave do atendimento (IdSamu + IdOcorrencia) embaralhada
+consorcio,Consórcio (nome da tabela de origem)
+ano,Ano de abertura da ocorrência
+dia_semana,Dia da semana da abertura (1 = domingo)
+faixa_horaria,Faixa de 6 h da hora de abertura (provisória; não é o turno institucional)
+codigo,"Prioridade ou tipo da chamada (ex.: vermelho, amarelo, verde, orientação, trote)"
+comatendimento,"S se houve atendimento com recurso, N caso contrário"
+tipounidade,USB ou USA (vazio se não houve recurso)
+tipotransporte,APH ou transferência (vazio se não houve transporte)
+tem_transporte,1 se há hospital de destino registrado (o nome do hospital não é publicado)
+d_criacao_tarm,Minutos: criação até TARM
+d_tarm_regulador,Minutos: TARM até regulador
+d_regulador_radio,Minutos: regulador até acionamento pelo rádio operador
+d_criacao_radio,Minutos: T1 (criação até acionamento)
+d_radio_pj9,Minutos: mobilização (acionamento até início do deslocamento)
+d_pj9_pj10,Minutos: T2 efetivo (início do deslocamento até chegada à cena)
+d_radio_pj10,Minutos: T2 (acionamento até chegada à cena)
+d_pj10_sj9,Minutos: tempo em cena (chegada à cena até saída para o hospital)
+d_sj9_sj10,Minutos: T3 efetivo (saída da cena até chegada ao hospital)
+d_pj10_sj10,Minutos: T3 (chegada à cena até chegada ao hospital)
+tem_<marco>,"1 se o marco de tempo está preenchido (datacriacao, datatarm, dataregulador, dataradiooperador, pj9, pj10, sj9, sj10)"
+dig_min_<marco>,Último dígito do minuto do marco (para teste de preferência por dígito)
+seg0_<marco>,1 se o segundo do marco é zero; vazio se o marco não existe
+coord_nula_<pj9|pj10|sj9|sj10>,1 se a coordenada gravada no marco é nula (latitude 0); 0 se presente; vazio se o marco não existe
+dist_km_pj9_pj10,"Distância em linha reta (km, 1 casa) entre os marcos PJ9 e PJ10, só com coordenadas válidas em MG"
+dist_km_sj9_sj10,"Distância em linha reta (km, 1 casa) entre SJ9 e SJ10, só com coordenadas válidas em MG"
+faixa_etaria,"Faixa etária, com categorias de qualidade (nao_informado, zero_registrado, fora_0_120) e 'suprimido'"
+sexo,"Sexo registrado, ou 'suprimido'"
+obito,Óbito registrado (S ou N)
+tipo_obito,"Tipo de óbito registrado, ou 'suprimido'"
